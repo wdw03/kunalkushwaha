@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Kushwaha | AC & Mechanical Technician Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Kunal Kushwaha - Hardworking and skilled technician specializing in AC servicing, HVAC maintenance, and mechanical repair work. Available for opportunities." />
+  <meta name="keywords" content="Kunal Kushwaha, AC Technician, HVAC, Mechanical Technician, Maintenance, Portfolio" />
+  <meta name="author" content="Kunal Kushwaha" />
+  <meta property="og:title" content="Kunal Kushwaha | AC & Mechanical Technician Portfolio" />
+  <meta property="og:description"
+    content="Hardworking technician specializing in AC servicing, HVAC, and mechanical maintenance. Explore my skills and get in touch." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+  <link rel="shortcut icon" type="image/jpeg" href="favicon.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="loader-ring"></div>
+    <span class="loader-text">Kunal Kushwaha</span>
+  </div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ========== PARTICLE CANVAS ========== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ========== SIDEBAR NAVIGATION ========== -->
+  <nav class="nav-sidebar" id="navSidebar">
+    <a href="#hero" class="active" data-section="hero">
+      <i class="fas fa-home"></i>
+      <span class="tooltip">Home</span>
+    </a>
+    <a href="#about" data-section="about">
+      <i class="fas fa-user"></i>
+      <span class="tooltip">About</span>
+    </a>
+    <div class="nav-divider"></div>
+    <a href="#skills" data-section="skills">
+      <i class="fas fa-tools"></i>
+      <span class="tooltip">Skills</span>
+    </a>
+    <a href="#education" data-section="education">
+      <i class="fas fa-graduation-cap"></i>
+      <span class="tooltip">Education</span>
+    </a>
+    <a href="#services" data-section="services">
+      <i class="fas fa-cogs"></i>
+      <span class="tooltip">Services</span>
+    </a>
+    <a href="#strengths" data-section="strengths">
+      <i class="fas fa-bolt"></i>
+      <span class="tooltip">Strengths</span>
+    </a>
+    <div class="nav-divider"></div>
+    <a href="#contact" data-section="contact">
+      <i class="fas fa-envelope"></i>
+      <span class="tooltip">Contact</span>
+    </a>
+  </nav>
+
+  <!-- ========== MOBILE NAVIGATION ========== -->
+  <nav class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-inner">
+      <a href="#hero" class="active" data-section="hero">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="#about" data-section="about">
+        <i class="fas fa-user"></i>
+        <span>About</span>
+      </a>
+      <a href="#skills" data-section="skills">
+        <i class="fas fa-tools"></i>
+        <span>Skills</span>
+      </a>
+      <a href="#education" data-section="education">
+        <i class="fas fa-graduation-cap"></i>
+        <span>Education</span>
+      </a>
+      <a href="#services" data-section="services">
+        <i class="fas fa-cogs"></i>
+        <span>Services</span>
+      </a>
+      <a href="#contact" data-section="contact">
+        <i class="fas fa-envelope"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="public/hero-banner.jpg" alt="Hero Background" />
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <!-- Text Side -->
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Available for Work
+          </div>
+          <p class="hero-greeting">// Hello, I'm</p>
+          <h1 class="hero-name animated-gradient">Kunal Kushwaha</h1>
+          <h2 class="hero-title">
+            Technician & Specialist in <span class="highlight">AC & HVAC Systems</span>
+          </h2>
+          <p class="hero-description">
+            A hardworking and responsible professional with practical knowledge in AC servicing,
+            HVAC systems, and mechanical maintenance. Always ready to learn and grow with dedication
+            and discipline.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary magnetic">
+              <i class="fas fa-paper-plane"></i>
+              Let's Talk
+            </a>
+            <a href="#about" class="btn-secondary magnetic">
+              <i class="fas fa-arrow-down"></i>
+              Know More
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="8">0+</div>
+              <div class="stat-label">Technical Skills</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="6">0+</div>
+              <div class="stat-label">Service Areas</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="100">0%</div>
+              <div class="stat-label">Dedication</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Side -->
+        <div class="hero-image-wrapper">
+          <div class="hero-float-card float-top-right">
+            <i class="fas fa-snowflake"></i>
+            AC Specialist
+          </div>
+          <div class="hero-float-card float-bottom-left">
+            <i class="fas fa-wrench"></i>
+            Mechanical Work
+          </div>
+          <div class="hero-float-card float-mid-right">
+            <i class="fas fa-shield-alt"></i>
+            Safety First
+          </div>
+          <div class="hero-image-container glow-border">
+            <img src="public/image copy.png" alt="Kunal Kushwaha" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section class="section about" id="about">
+    <div class="about-bg-image">
+      <img src="public/about-bg.jpg" alt="About Background" />
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+        <h2 class="section-title">
+          Know Who <span class="gradient-text">I Am</span>
+        </h2>
+        <p class="section-subtitle">
+          A dedicated and disciplined individual with a passion for technical work and problem-solving
+        </p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-image">
+          <div class="about-image-inner">
+            <img src="public/image.png" alt="Kunal Kushwaha" />
+          </div>
+          <div class="about-experience-badge">
+            <span class="num">Ready</span>
+            <span class="label">To Work</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h3>I'm <span class="gradient-text">Kunal Kushwaha</span></h3>
+          <p>
+            I am a hardworking and responsible fresher with strong interest in technical and practical work.
+            I have practical knowledge of AC servicing, HVAC systems, and basic mechanical repair & maintenance.
+            I am always ready to learn new skills and take on challenges.
+          </p>
+          <p>
+            I am looking for an opportunity in a reputed organization where I can utilize my technical
+            skills, contribute to the organization's growth, and develop my professional career.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="about-info-item">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <span class="label">Name</span>
+                <span class="value">Kunal Kushwaha</span>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-phone"></i>
+              <div class="info">
+                <span class="label">Phone</span>
+                <span class="value">+91 9199200234</span>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <span class="label">Email</span>
+                <span class="value">kk6892734@gmail.com</span>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-globe"></i>
+              <div class="info">
+                <span class="label">Language</span>
+                <span class="value">Hindi, English</span>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-flag"></i>
+              <div class="info">
+                <span class="label">Nationality</span>
+                <span class="value">Indian</span>
+              </div>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-briefcase"></i>
+              <div class="info">
+                <span class="label">Status</span>
+                <span class="value">Available for Work</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-primary magnetic">
+            <i class="fas fa-paper-plane"></i>
+            Hire Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+       ============================================================ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-tools"></i> My Skills</span>
+        <h2 class="section-title">
+          Technical <span class="gradient-text">Expertise</span>
+        </h2>
+        <p class="section-subtitle">
+          Practical skills and knowledge that I bring to every task
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill 1 -->
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-snowflake"></i></div>
+          <h3>AC Servicing & Maintenance</h3>
+          <p>Complete knowledge of AC servicing, cleaning, gas filling, and regular maintenance procedures to keep
+            systems running efficiently.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">AC Servicing</span>
+            <span class="skill-tag">Gas Filling</span>
+            <span class="skill-tag">Filter Cleaning</span>
+            <span class="skill-tag">Maintenance</span>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-fan"></i></div>
+          <h3>AC Installation & Troubleshooting</h3>
+          <p>Practical knowledge of split & window AC installation, copper piping, electrical connections, and
+            troubleshooting common issues.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Split AC</span>
+            <span class="skill-tag">Window AC</span>
+            <span class="skill-tag">Installation</span>
+            <span class="skill-tag">Troubleshooting</span>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-wrench"></i></div>
+          <h3>Mechanical Repair & Maintenance</h3>
+          <p>Basic mechanical repair skills including understanding of machine parts, bearings, belts, and routine
+            equipment maintenance.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Repair</span>
+            <span class="skill-tag">Machine Parts</span>
+            <span class="skill-tag">Bearings</span>
+            <span class="skill-tag">Equipment</span>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-toolbox"></i></div>
+          <h3>Tools & Workshop Equipment</h3>
+          <p>Proficient with hand tools, power tools, and basic workshop equipment including multimeters, pressure
+            gauges, and measuring instruments.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Hand Tools</span>
+            <span class="skill-tag">Power Tools</span>
+            <span class="skill-tag">Gauges</span>
+            <span class="skill-tag">Multimeter</span>
+          </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-search"></i></div>
+          <h3>Fault Identification</h3>
+          <p>Ability to identify faults and diagnose problems quickly. Systematic approach to finding and fixing issues
+            in AC and mechanical systems.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Diagnostics</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Analysis</span>
+          </div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-hard-hat"></i></div>
+          <h3>Safety & Work Discipline</h3>
+          <p>Strong understanding of workplace safety procedures, proper use of PPE, and maintaining work discipline on
+            job sites.</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Safety</span>
+            <span class="skill-tag">PPE</span>
+            <span class="skill-tag">Discipline</span>
+            <span class="skill-tag">Compliance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+       ============================================================ -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+        <h2 class="section-title">
+          Academic <span class="gradient-text">Background</span>
+        </h2>
+        <p class="section-subtitle">
+          My educational journey and academic qualifications
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- BA -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year"><i class="fas fa-calendar"></i> Present</span>
+            <h3>Bachelor of Arts (B.A.)</h3>
+            <p class="institution"><i class="fas fa-university"></i> Currently Pursuing</p>
+            <p class="score">Status: <strong>Ongoing</strong></p>
+          </div>
+        </div>
+
+        <!-- 12th -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year"><i class="fas fa-calendar"></i> Completed</span>
+            <h3>Class 12th (Intermediate)</h3>
+            <p class="institution"><i class="fas fa-school"></i> Board Examination</p>
+            <p class="score">Marks: <strong>215 / 500 (43%)</strong></p>
+          </div>
+        </div>
+
+        <!-- 10th -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year"><i class="fas fa-calendar"></i> Completed</span>
+            <h3>Class 10th (Matriculation)</h3>
+            <p class="institution"><i class="fas fa-school"></i> Board Examination</p>
+            <p class="score">Marks: <strong>244 / 500 (48.8%)</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES SECTION
+       ============================================================ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-cogs"></i> What I Do</span>
+        <h2 class="section-title">
+          Professional <span class="gradient-text">Services</span>
+        </h2>
+        <p class="section-subtitle">
+          Areas of expertise where I can provide quality service and support
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="public/service-ac.jpg" alt="AC Installation & Servicing" />
+            <div class="overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3><i class="fas fa-snowflake"></i> AC Installation & Servicing</h3>
+            <p>Complete AC installation, servicing, gas filling, filter cleaning, and regular maintenance for both split
+              and window units.</p>
+            <div class="service-features">
+              <span class="service-feature"><i class="fas fa-check"></i> Installation</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Gas Filling</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Servicing</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Repair</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="public/service-hvac.jpg" alt="HVAC Systems" />
+            <div class="overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3><i class="fas fa-wind"></i> HVAC Systems</h3>
+            <p>Basic knowledge of HVAC systems including ventilation, heating, and cooling systems for commercial and
+              residential buildings.</p>
+            <div class="service-features">
+              <span class="service-feature"><i class="fas fa-check"></i> Ventilation</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Cooling</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Duct Work</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Maintenance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="public/service-mechanical.jpg" alt="Mechanical Repair" />
+            <div class="overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3><i class="fas fa-wrench"></i> Mechanical Repair</h3>
+            <p>Basic mechanical repair and maintenance including machine parts replacement, lubrication, alignment, and
+              routine equipment checks.</p>
+            <div class="service-features">
+              <span class="service-feature"><i class="fas fa-check"></i> Repair</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Maintenance</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Parts</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Lubrication</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-card-image">
+            <img src="public/service-maintenance.jpg" alt="Facility Maintenance" />
+            <div class="overlay"></div>
+          </div>
+          <div class="service-card-content">
+            <h3><i class="fas fa-building"></i> Facility Maintenance</h3>
+            <p>Building and facility maintenance support including electrical panels, plumbing basics, equipment
+              monitoring, and preventive maintenance.</p>
+            <div class="service-features">
+              <span class="service-feature"><i class="fas fa-check"></i> Building</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Electrical</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Plumbing</span>
+              <span class="service-feature"><i class="fas fa-check"></i> Preventive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STRENGTHS SECTION
+       ============================================================ -->
+  <section class="section strengths" id="strengths">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-bolt"></i> My Strengths</span>
+        <h2 class="section-title">
+          Key <span class="gradient-text">Qualities</span>
+        </h2>
+        <p class="section-subtitle">
+          Personal attributes that make me a reliable and valuable team member
+        </p>
+      </div>
+
+      <div class="strengths-grid">
+        <div class="strength-card">
+          <div class="strength-icon">💪</div>
+          <h3>Hardworking & Punctual</h3>
+          <p>Dedicated to completing every task with full effort and always on time</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">🚀</div>
+          <h3>Quick Learner</h3>
+          <p>Ability to quickly adapt and learn new technical skills on the job</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">🎯</div>
+          <h3>Responsible & Disciplined</h3>
+          <p>Take ownership of work with strong self-discipline and accountability</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">🤝</div>
+          <h3>Team Player</h3>
+          <p>Excellent at working collaboratively with team members and supervisors</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">🔧</div>
+          <h3>Problem Solver</h3>
+          <p>Practical approach to identifying and solving technical problems</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">⚡</div>
+          <h3>Ready to Learn</h3>
+          <p>Always eager to take on new responsibilities and learn new skills</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">🧘</div>
+          <h3>Works Under Pressure</h3>
+          <p>Calm and composed even in high-pressure situations and tight deadlines</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon">✅</div>
+          <h3>Follows Instructions</h3>
+          <p>Completes tasks accurately following given instructions and procedures</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CAREER INTERESTS MARQUEE
+       ============================================================ -->
+  <section class="career-interests" id="career">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-bullseye"></i> Career Goals</span>
+        <h2 class="section-title">
+          Areas of <span class="gradient-text">Interest</span>
+        </h2>
+      </div>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <span class="career-tag"><i class="fas fa-snowflake"></i> AC Technician</span>
+        <span class="career-tag"><i class="fas fa-wind"></i> HVAC Technician</span>
+        <span class="career-tag"><i class="fas fa-wrench"></i> Mechanical Technician</span>
+        <span class="career-tag"><i class="fas fa-tools"></i> Maintenance Technician</span>
+        <span class="career-tag"><i class="fas fa-industry"></i> Production / Manufacturing</span>
+        <span class="career-tag"><i class="fas fa-building"></i> Facility Maintenance</span>
+        <span class="career-tag"><i class="fas fa-cog"></i> Service & Repair</span>
+        <span class="career-tag"><i class="fas fa-headset"></i> Technical Support</span>
+        <span class="career-tag"><i class="fas fa-bolt"></i> Electrical Helper</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="career-tag"><i class="fas fa-snowflake"></i> AC Technician</span>
+        <span class="career-tag"><i class="fas fa-wind"></i> HVAC Technician</span>
+        <span class="career-tag"><i class="fas fa-wrench"></i> Mechanical Technician</span>
+        <span class="career-tag"><i class="fas fa-tools"></i> Maintenance Technician</span>
+        <span class="career-tag"><i class="fas fa-industry"></i> Production / Manufacturing</span>
+        <span class="career-tag"><i class="fas fa-building"></i> Facility Maintenance</span>
+        <span class="career-tag"><i class="fas fa-cog"></i> Service & Repair</span>
+        <span class="career-tag"><i class="fas fa-headset"></i> Technical Support</span>
+        <span class="career-tag"><i class="fas fa-bolt"></i> Electrical Helper</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section class="section contact" id="contact">
+    <div class="contact-bg">
+      <img src="public/contact-bg.jpg" alt="Contact Background" />
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-envelope"></i> Get In Touch</span>
+        <h2 class="section-title">
+          Let's <span class="gradient-text">Connect</span>
+        </h2>
+        <p class="section-subtitle">
+          Interested in hiring me? Let's discuss how I can contribute to your organization
+        </p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Reach Out to Me</h3>
+          <p>
+            I am actively looking for opportunities in AC servicing, HVAC, mechanical maintenance,
+            and related technical fields. Feel free to contact me for any suitable openings.
+          </p>
+
+          <div class="contact-details">
+            <a href="tel:+919199200234" class="contact-detail-item">
+              <div class="icon-wrap"><i class="fas fa-phone"></i></div>
+              <div class="info">
+                <span class="label">Phone</span>
+                <span class="value">+91 9199200234</span>
+              </div>
+            </a>
+            <a href="mailto:kk6892734@gmail.com" class="contact-detail-item">
+              <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+              <div class="info">
+                <span class="label">Email</span>
+                <span class="value">kk6892734@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-detail-item">
+              <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info">
+                <span class="label">Location</span>
+                <span class="value">India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:kk6892734@gmail.com" class="social-link magnetic" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+919199200234" class="social-link magnetic" title="Phone">
+              <i class="fas fa-phone"></i>
+            </a>
+            <a href="https://wa.me/919199200234" target="_blank" class="social-link magnetic" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form" id="contactForm">
+          <form id="contactFormElement">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job opportunity, hiring, etc." />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about the opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit magnetic">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">KK.</div>
+        <p class="footer-text">
+          Made with <span class="heart">❤</span> by Kunal Kushwaha &copy; 2026
+        </p>
+        <a href="#hero" class="back-to-top magnetic" title="Back to Top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script src="script.js"></script>
+</body>
+
+</html>
